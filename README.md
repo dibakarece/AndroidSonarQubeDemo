@@ -52,6 +52,10 @@ sonarqube {
     }  
 }  
 
+Check SonarQube:   
+Go to your Android Studio Terminal and write command >>>> gradlew sonarRunner and press Enter   
+My Case : D:\Android\AndroidStudioProject\AndroidSonarQubeDemo>gradlew sonarRunner
+
 ![pic_2](https://cloud.githubusercontent.com/assets/10453203/20650565/b647c3e0-b4f7-11e6-8771-31e6145f8b4d.JPG)
 
 ![pic_1](https://cloud.githubusercontent.com/assets/10453203/20650564/b3643c76-b4f7-11e6-887b-9a362c23f9cb.JPG)
