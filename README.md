@@ -14,7 +14,43 @@ Starting SonarQube
 2. Open a corresponding folder according to your operating system (windows-x86-64 in my case). There you should see a file called StartSonar.bat (or sonar.sh for Linux)  
 3. Just double click StartSonar.bat on windows (or Open up a terminal window and execute: sonar.sh start ). This command will start sonar listening on localhost:9000.  
 4. Open a browser and enter localhost:9000. The sonar web page should open.  
-Note that it may take some time until sonar loads, so if you get “page not found” in your browser, try to refresh the page later.  
+Note that it may take some time until sonar loads, so if you get “page not found” in your browser, try to refresh the page later.
+
+Android Integration:  
+Add below line code in your app> build.gradle >  
+
+buildscript { 
+    repositories { 
+        maven {  
+            url 'https://plugins.gradle.org/m2/'  
+        }  
+    }  
+    dependencies {  
+        classpath "org.sonarsource.scanner.gradle:sonarqube-gradle-plugin:2.0.1"   
+    }  
+}  
+apply plugin: 'sonar-runner'  
+apply plugin: "org.sonarqube"  
+sonarRunner {   
+    sonarProperties {   
+        property "sonar.host.url", "http://localhost:9000/"// Your sonar server address   
+        property "sonar.sources", "src/main/java" // Sources  
+        property "sonar.projectName", "AndroidSonarQubeDemo" // Your project name   
+        property "sonar.projectVersion", "1.0" // Your project version   
+        property "sonar.projectDescription", "Android SonarQube Test Project"   
+    }   
+}   
+sonarqube {   
+    properties {  
+        property "sonar.projectName", "AndroidSonarQubeDemo"   
+        property "sonar.projectKey", "dm.androidsonarqubedemo:AndroidSonarQubeDemo"   
+        property "sonar.sourceEncoding", "UTF-8"   
+        property "sonar.sources", "src/main/java"   
+        property "sonar.exclusions", "build/**,**/*.png"  
+        property "sonar.import_unknown_files", true  
+        property "sonar.android.lint.report", "./build/slf/lint-results.xml"   
+    }  
+}  
 
 ![pic_2](https://cloud.githubusercontent.com/assets/10453203/20650565/b647c3e0-b4f7-11e6-8771-31e6145f8b4d.JPG)
 
