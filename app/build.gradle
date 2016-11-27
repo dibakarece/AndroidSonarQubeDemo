@@ -1,0 +1,64 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 24
+    buildToolsVersion "24.0.3"
+    defaultConfig {
+        applicationId "dm.androidsonarqubedemo"
+        minSdkVersion 15
+        targetSdkVersion 24
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    compile 'com.android.support:appcompat-v7:24.2.1'
+    testCompile 'junit:junit:4.12'
+}
+
+/**************************************************Android SonarQube********************************/
+buildscript {
+    repositories {
+        maven {
+            url 'https://plugins.gradle.org/m2/'
+        }
+    }
+    dependencies {
+        classpath "org.sonarsource.scanner.gradle:sonarqube-gradle-plugin:2.0.1"
+    }
+}
+apply plugin: 'sonar-runner'
+apply plugin: "org.sonarqube"
+sonarRunner {
+    sonarProperties {
+        property "sonar.host.url", "http://localhost:9000/"// Your sonar server address
+        property "sonar.sources", "src/main/java" // Sources
+        property "sonar.projectName", "AndroidSonarQubeDemo" // Your project name
+        property "sonar.projectVersion", "1.0" // Your project version
+        property "sonar.projectDescription", "Android SonarQube Test Project"
+    }
+}
+sonarqube {
+    properties {
+        property "sonar.projectName", "AndroidSonarQubeDemo"
+        property "sonar.projectKey", "dm.androidsonarqubedemo:AndroidSonarQubeDemo"
+        property "sonar.sourceEncoding", "UTF-8"
+        property "sonar.sources", "src/main/java"
+        property "sonar.exclusions", "build/**,**/*.png"
+        property "sonar.import_unknown_files", true
+        property "sonar.android.lint.report", "./build/slf/lint-results.xml"
+
+    }
+}

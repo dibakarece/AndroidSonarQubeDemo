@@ -1,0 +1,128 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:androidsonarqubedemo="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/md_white_1000"
+    android:orientation="vertical">
+
+    <include
+        layout="@layout/include_topbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fadingEdge="none"
+            android:scrollbarThumbVertical="@drawable/scrollbar">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="@dimen/dp_ten">
+
+                <dm.androidsonarqubedemo.ui.widgets.CustomEditText
+                    android:id="@+id/login_edt_fname"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_thirtyfive"
+                    android:background="@drawable/createaccount_textbox"
+                    android:gravity="left|center_vertical"
+                    android:hint="@string/create_account_txt_fname"
+                    android:inputType="text"
+                    android:textColor="@color/app_textcolor"
+                    android:textColorHint="@color/app_textcolor"
+                    android:textSize="@dimen/sp_medium"
+                    androidsonarqubedemo:customFont="@string/font_regular" />
+
+                <dm.androidsonarqubedemo.ui.widgets.CustomEditText
+                    android:id="@+id/login_edt_lname"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_eight"
+                    android:background="@drawable/createaccount_textbox"
+                    android:gravity="left|center_vertical"
+                    android:hint="@string/create_account_txt_lname"
+                    android:inputType="text"
+                    android:textColor="@color/app_textcolor"
+                    android:textColorHint="@color/app_textcolor"
+                    android:textSize="@dimen/sp_medium"
+                    androidsonarqubedemo:customFont="@string/font_regular" />
+
+                <dm.androidsonarqubedemo.ui.widgets.CustomEditText
+                    android:id="@+id/login_edt_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_eight"
+                    android:background="@drawable/createaccount_textbox"
+                    android:gravity="left|center_vertical"
+                    android:hint="@string/create_account_txt_email"
+                    android:inputType="textEmailAddress"
+                    android:textColor="@color/app_textcolor"
+                    android:textColorHint="@color/app_textcolor"
+                    android:textSize="@dimen/sp_medium"
+                    androidsonarqubedemo:customFont="@string/font_regular" />
+
+                <dm.androidsonarqubedemo.ui.widgets.CustomEditText
+                    android:id="@+id/login_edt_phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_eight"
+                    android:background="@drawable/createaccount_textbox"
+                    android:gravity="left|center_vertical"
+                    android:hint="@string/create_account_txt_lname"
+                    android:inputType="text"
+                    android:textColor="@color/app_textcolor"
+                    android:textColorHint="@color/app_textcolor"
+                    android:textSize="@dimen/sp_medium"
+                    androidsonarqubedemo:customFont="@string/font_regular" />
+
+                <dm.androidsonarqubedemo.ui.widgets.CustomEditText
+                    android:id="@+id/login_edt_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_eight"
+                    android:background="@drawable/createaccount_textbox"
+                    android:gravity="left|center_vertical"
+                    android:hint="@string/create_account_txt_password"
+                    android:inputType="text"
+                    android:textColor="@color/app_textcolor"
+                    android:textColorHint="@color/app_textcolor"
+                    android:textSize="@dimen/sp_medium"
+                    androidsonarqubedemo:customFont="@string/font_regular" />
+
+                <dm.androidsonarqubedemo.ui.widgets.CustomEditText
+                    android:id="@+id/login_edt_confpassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_eight"
+                    android:background="@drawable/createaccount_textbox"
+                    android:gravity="left|center_vertical"
+                    android:hint="@string/create_account_txt_confpassword"
+                    android:inputType="text"
+                    android:textColor="@color/app_textcolor"
+                    android:textColorHint="@color/app_textcolor"
+                    android:textSize="@dimen/sp_medium"
+                    androidsonarqubedemo:customFont="@string/font_regular" />
+
+                <dm.androidsonarqubedemo.ui.widgets.CustomTextView
+                    android:id="@+id/login_btn_create"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_twenty"
+                    android:background="@drawable/login_btn"
+                    android:gravity="center"
+                    android:text="@string/create_account_btn_createacc"
+                    android:textColor="@color/md_white_1000"
+                    android:textSize="@dimen/sp_medium"
+                    androidsonarqubedemo:customFont="@string/font_regular" />
+            </LinearLayout>
+        </ScrollView>
+    </FrameLayout>
+</LinearLayout>

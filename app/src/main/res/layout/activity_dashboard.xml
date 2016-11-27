@@ -1,0 +1,75 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:androidsonarqubedemo="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/md_white_1000">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fadingEdge="none"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/md_white_1000"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/dp_thirty"
+            android:paddingRight="@dimen/dp_thirty">
+
+            <dm.androidsonarqubedemo.ui.widgets.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:gravity="center"
+                android:paddingBottom="@dimen/dp_sixty"
+                android:paddingTop="@dimen/dp_thirtyfive"
+                android:text="SonarQube Android"
+                android:textColor="@color/app_main_color_700"
+                android:textSize="@dimen/sp_largexv"
+                androidsonarqubedemo:customFont="@string/font_bold" />
+
+            <dm.androidsonarqubedemo.ui.widgets.CustomTextView
+                android:id="@+id/login_edt_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left|center_vertical"
+                android:inputType="text"
+                android:padding="@dimen/dp_eight"
+                android:textColor="@color/app_textcolor"
+                android:textColorHint="@color/app_textcolor"
+                android:textSize="@dimen/sp_medium"
+                androidsonarqubedemo:customFont="@string/font_regular" />
+
+            <dm.androidsonarqubedemo.ui.widgets.CustomTextView
+                android:id="@+id/login_edt_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left|center_vertical"
+                android:inputType="text"
+                android:padding="@dimen/dp_eight"
+                android:textColor="@color/app_textcolor"
+                android:textColorHint="@color/app_textcolor"
+                android:textSize="@dimen/sp_medium"
+                androidsonarqubedemo:customFont="@string/font_regular" />
+
+            <dm.androidsonarqubedemo.ui.widgets.CustomTextView
+                android:id="@+id/login_edt_phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left|center_vertical"
+                android:inputType="text"
+                android:padding="@dimen/dp_eight"
+                android:textColor="@color/app_textcolor"
+                android:textColorHint="@color/app_textcolor"
+                android:textSize="@dimen/sp_medium"
+                androidsonarqubedemo:customFont="@string/font_regular" />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

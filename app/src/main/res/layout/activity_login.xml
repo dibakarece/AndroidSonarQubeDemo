@@ -1,0 +1,113 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:androidsonarqubedemo="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/md_white_1000">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fadingEdge="none"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/md_white_1000"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/dp_thirty"
+            android:paddingRight="@dimen/dp_thirty">
+
+            <dm.androidsonarqubedemo.ui.widgets.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:gravity="center"
+                android:paddingBottom="@dimen/dp_sixty"
+                android:paddingTop="@dimen/dp_thirtyfive"
+                android:text="SonarQube Android"
+                android:textColor="@color/app_main_color_700"
+                android:textSize="@dimen/sp_largexv"
+                androidsonarqubedemo:customFont="@string/font_bold" />
+
+            <dm.androidsonarqubedemo.ui.widgets.CustomEditText
+                android:id="@+id/login_edt_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/createaccount_textbox"
+                android:drawableLeft="@drawable/email_icon"
+                android:drawablePadding="@dimen/dp_five"
+                android:gravity="left|center_vertical"
+                android:hint="@string/login_hint_email"
+                android:inputType="textEmailAddress"
+                android:textColor="@color/app_textcolor"
+                android:textColorHint="@color/app_textcolor"
+                android:textSize="@dimen/sp_medium"
+                androidsonarqubedemo:customFont="@string/font_regular" />
+
+            <dm.androidsonarqubedemo.ui.widgets.CustomEditText
+                android:id="@+id/login_edt_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_eight"
+                android:background="@drawable/createaccount_textbox"
+                android:drawableLeft="@drawable/password_icon"
+                android:drawablePadding="@dimen/dp_five"
+                android:gravity="left|center_vertical"
+                android:hint="@string/login_hint_password"
+                android:inputType="textPassword"
+                android:textColor="@color/app_textcolor"
+                android:textColorHint="@color/app_textcolor"
+                android:textSize="@dimen/sp_medium"
+                androidsonarqubedemo:customFont="@string/font_regular" />
+
+            <dm.androidsonarqubedemo.ui.widgets.CustomTextView
+                android:id="@+id/login_btn_login"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_twenty"
+                android:background="@drawable/login_btn"
+                android:gravity="center"
+                android:text="@string/login_text_Login"
+                android:textColor="@color/md_white_1000"
+                android:textSize="@dimen/sp_medium"
+                androidsonarqubedemo:customFont="@string/font_regular" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <dm.androidsonarqubedemo.ui.widgets.CustomTextView
+                    android:id="@+id/login_btn_createaccount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:gravity="left"
+                    android:paddingBottom="@dimen/dp_eight"
+                    android:paddingTop="@dimen/dp_eight"
+                    android:text="@string/login_text_createaccount"
+                    android:textColor="@color/app_textcolor"
+                    android:textSize="@dimen/sp_medium"
+                    androidsonarqubedemo:customFont="@string/font_regular" />
+
+                <dm.androidsonarqubedemo.ui.widgets.CustomTextView
+                    android:id="@+id/login_btn_forgotpass"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:gravity="right"
+                    android:paddingBottom="@dimen/dp_eight"
+                    android:paddingTop="@dimen/dp_eight"
+                    android:text="@string/login_text_forgotpassword"
+                    android:textColor="@color/app_textcolor"
+                    android:textSize="@dimen/sp_medium"
+                    androidsonarqubedemo:customFont="@string/font_regular" />
+            </RelativeLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- DP Dimen -->
+    <dimen name="dp_two">4dp</dimen>
+    <dimen name="dp_three">6dp</dimen>
+    <dimen name="dp_five">10dp</dimen>
+    <dimen name="dp_eight">13dp</dimen>
+    <dimen name="dp_ten">15dp</dimen>
+    <dimen name="dp_twelve">18dp</dimen>
+    <dimen name="dp_fifteen">22dp</dimen>
+    <dimen name="dp_eighteen">25dp</dimen>
+    <dimen name="dp_twenty">30dp</dimen>
+    <dimen name="dp_twentytwo">30dp</dimen>
+    <dimen name="dp_twenttfive">34dp</dimen>
+    <dimen name="dp_thirty">40dp</dimen>
+    <dimen name="dp_thirtyfive">46dp</dimen>
+    <dimen name="dp_forty">52dp</dimen>
+    <dimen name="dp_fifty">62dp</dimen>
+    <dimen name="dp_sixty">86dp</dimen>
+    <dimen name="dp_eighty">120dp</dimen>
+
+    <dimen name="dp_dashboard_marTop">30dp</dimen>
+    <dimen name="dp_dashboard_marBottom">26dp</dimen>
+    <dimen name="dp_myprofile_ht">145dp</dimen>
+    <dimen name="dp_recyHt">195dp</dimen>
+    <dimen name="dp_btnsignin">65dp</dimen>
+
+    <!-- Medium Text Size -->
+    <dimen name="sp_largexv">36sp</dimen>
+    <dimen name="sp_largexxx">34sp</dimen>
+    <dimen name="sp_largexx">32sp</dimen>
+    <dimen name="sp_largex">30sp</dimen>
+    <dimen name="sp_large">28sp</dimen>
+
+    <!-- Medium Text Size -->
+    <dimen name="sp_mediumxxx">26sp</dimen>
+    <dimen name="sp_mediumxx">24sp</dimen>
+    <dimen name="sp_mediumx">22sp</dimen>
+    <dimen name="sp_medium">20sp</dimen>
+
+    <!-- Small Text Size -->
+    <dimen name="sp_smallxx">18sp</dimen>
+    <dimen name="sp_smallx">16sp</dimen>
+    <dimen name="sp_small">14sp</dimen>
+
+    <!-- Bill Desk -->
+    <dimen name="header_height">64dp</dimen>
+    <!--<dimen name="body_font_size">8sp</dimen>-->
+    <!--<dimen name="button_font_size">10sp</dimen>-->
+
+    <!-- Map PopUp dialog-->
+    <dimen name="map_width">400dp</dimen>
+    <dimen name="map_height">200dp</dimen>
+    <dimen name="about_contact_height">170dp</dimen>
+    <dimen name="vaccenationimg_height">160dp</dimen>
+</resources>

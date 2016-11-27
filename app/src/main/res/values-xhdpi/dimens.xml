@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- DP Dimen -->
+    <dimen name="dp_two">3dp</dimen>
+    <dimen name="dp_three">4dp</dimen>
+    <dimen name="dp_five">7dp</dimen>
+    <dimen name="dp_eight">10dp</dimen>
+    <dimen name="dp_ten">12dp</dimen>
+    <dimen name="dp_twelve">15dp</dimen>
+    <dimen name="dp_fifteen">18dp</dimen>
+    <dimen name="dp_eighteen">21dp</dimen>
+    <dimen name="dp_twenty">23dp</dimen>
+    <dimen name="dp_twentytwo">25dp</dimen>
+    <dimen name="dp_twenttfive">29dp</dimen>
+    <dimen name="dp_thirty">35dp</dimen>
+    <dimen name="dp_thirtyfive">40dp</dimen>
+    <dimen name="dp_forty">46dp</dimen>
+    <dimen name="dp_fifty">56dp</dimen>
+    <dimen name="dp_sixty">66dp</dimen>
+    <dimen name="dp_seventy">76dp</dimen>
+    <dimen name="dp_eighty">86dp</dimen>
+
+    <dimen name="dp_dashboard_marTop">18dp</dimen>
+    <dimen name="dp_dashboard_marBottom">18dp</dimen>
+    <dimen name="dp_myprofile_ht">100dp</dimen>
+    <dimen name="dp_recyHt">135dp</dimen>
+    <dimen name="dp_btnsignin">55dp</dimen>
+
+    <!-- Medium Text Size -->
+    <dimen name="sp_largexv">30sp</dimen>
+    <dimen name="sp_largexxx">28sp</dimen>
+    <dimen name="sp_largexx">26sp</dimen>
+    <dimen name="sp_largex">24sp</dimen>
+    <dimen name="sp_large">22sp</dimen>
+
+    <!-- Medium Text Size -->
+    <dimen name="sp_mediumxxx">20sp</dimen>
+    <dimen name="sp_mediumxx">18sp</dimen>
+    <dimen name="sp_mediumx">16sp</dimen>
+    <dimen name="sp_medium">14sp</dimen>
+
+    <!-- Small Text Size -->
+    <dimen name="sp_smallxx">12sp</dimen>
+    <dimen name="sp_smallx">10sp</dimen>
+    <dimen name="sp_small">8sp</dimen>
+
+    <!-- Bill Desk -->
+    <dimen name="header_height">56dp</dimen>
+    <!--<dimen name="body_font_size">8sp</dimen>
+    <dimen name="button_font_size">10sp</dimen>-->
+
+    <!-- Map PopUp dialog-->
+    <dimen name="map_width">320dp</dimen>
+    <dimen name="map_height">170dp</dimen>
+    <dimen name="about_contact_height">150dp</dimen>
+    <dimen name="vaccenationimg_height">110dp</dimen>
+</resources>

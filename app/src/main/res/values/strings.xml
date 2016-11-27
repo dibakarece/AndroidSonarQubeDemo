@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">AndroidSonarQubeDemo</string>
+
+    <!-- Font Name -->
+    <string name="font_regular">fonts/OpenSans-Regular.ttf</string>
+    <string name="font_bold">fonts/OpenSans-Bold.ttf</string>
+    <!-- Login -->
+    <string name="login_hint_email">exm.test@gmail.com</string>
+    <string name="login_hint_password">Password</string>
+    <string name="login_text_Login"><b>Login</b></string>
+    <string name="login_text_loginwfacebook"><b>Login</b> with <b>Facebook</b></string>
+    <string name="login_text_loginwlinkedin"><b>Login</b> with <b>Linkedin</b></string>
+    <string name="login_text_loginwtwitter"><b>Login</b> with <b>Twitter</b></string>
+    <string name="login_text_createaccount">Create Account</string>
+    <string name="login_text_forgotpassword">Forgot Password</string>
+    <string name="login_text_or">OR</string>
+    <!-- Create Account -->
+    <string name="create_account_title">Create Your Account</string>
+    <string name="create_account_btn_createacc">Create Account</string>
+    <string name="create_account_txt_fname">First Name</string>
+    <string name="create_account_txt_lname">Last Name</string>
+    <string name="create_account_txt_email">Email Address</string>
+    <string name="create_account_txt_phone">Phone Number</string>
+    <string name="create_account_txt_password">Password</string>
+    <string name="create_account_txt_confpassword">Confirm Password</string>
+</resources>
