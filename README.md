@@ -1,4 +1,4 @@
-[![Android Arsenal](https://img.shields.io/badge/Android%20Arsenal-AndroidSonarQubeDemo-brightgreen.svg?style=flat)]()
+[![Android Arsenal](https://img.shields.io/badge/Android%20Arsenal-AndroidSonarQubeDemo-brightgreen.svg?style=flat)](https://android-arsenal.com/details/3/4903)
 # AndroidSonarQubeDemo
 SonarQube integration in Android for proper code review and code structuring.
 
